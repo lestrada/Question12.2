@@ -12,7 +12,7 @@ head(raw)
 
 library(reshape2)
 tidy <- melt(raw, id = "religion")
-
+#adding some annotations
 head(raw)
 head(tidy)
 
@@ -44,7 +44,7 @@ titanic2 <- read.csv("data/titanic2.csv",
   stringsAsFactors = FALSE)
 
 head(titanic2)
-
+#more annotations
 # Your Turn
 # ------------------------------------------
 tidy <- melt(titanic2, id = c("class", "age", "fate"), 
@@ -59,7 +59,7 @@ head(tidy)
 # ------------------------------------------
 
 # Data split across many files
-
+#testing some more stuff
 df1 <- data.frame(color = "white", value = c(3, 4))
 df2 <- data.frame(color = "blue", value = c(3, 4, 5))
 rbind(df1, df2)
